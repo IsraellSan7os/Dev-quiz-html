@@ -4,11 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Page Title</title>
+    <link rel="stylesheet" href="Css/style.css">
   </head>
 
   <body>
     <!--Cabeçalho-->
-    <header>
+    <header class="header">
       <h1>Quiz interativo pra programadores</h1>
       <p>
         Quiz interativo pra programadores e veja qual pontuação você consegue
@@ -17,7 +18,7 @@
     </header>
 
     <!--Conteudo Principal-->
-    <main>
+    <main class="main">
       <!--Intrudução-->
       <section>
         <h2>Sobre esse quiz</h2>
@@ -44,13 +45,8 @@
       <section>
         <h2>Perguta 1: Qual é usada para estruturar a página web?</h2>
         <form action="#">
-          <input
-            type="radio"
-            value="Python"
-            id="p1a"
-            name="pergunta1"
-            checked
-          />
+
+          <input type="radio"value="Python"id="p1a"name="pergunta1"checked/>
           <label for="pergunta1">Python</label> <br />
 
           <input type="radio" value="html" id="p1b" name="pergunta1" />
@@ -69,25 +65,14 @@
           Pergunta 2: Na URL http://www.google.com o treço google.com o _______?
         </h2>
         <form action="#">
-          <input
-            type="text"
-            name="pergunta2"
-            name="pergunta2"
-            id="p2"
-            placeholder="Digite aqui"
-          />
+          <input type="text" name="pergunta2" name="pergunta2" id="p2" placeholder="Digite aqui"/>
         </form>
       </section>
       <!--Pergunta 3:senha-->
       <section>
         <h2>Pergunta 3: Escreva um exemplo de senha forte</h2>
         <form action="#">
-          <input
-            type="password"
-            id="p3"
-            name="pergunta3"
-            placeholder="Digite uma senha"
-          />
+          <input type="password" id="p3" name="pergunta3" placeholder="Digite uma senha"/>
         </form>
       </section>
       <!--Pergunta 4: data-->
@@ -198,13 +183,13 @@
                                     <td>Perfeito! Você está muito bem informado sobre programação</td>
                                 </tr>
                         </tbody>
-                            <footer>
+                            <tfoot>
                                 <tr>
                                     <td colspan="2">
                                         Boa sorte na proxima!
                                     </td>
                                 </tr>
-                            </footer>
+                            </tfoot>
                     </table>
      </section>
      <!--Lista e respostas-->
@@ -238,7 +223,9 @@
                 <input type="email" id="email" name="email" placeholder="Digite seu Email"> <br>
                 <label for="comentarios">Comentários:</label><br>
                 <textarea name="comentarios" id="comentarios" rows="4" cols="50">Digite seu cometarios aqui</textarea>
+                <button onclick="alert">FEEDBACK ENVIADO</button>
              </fieldset>
+            
         </form>
      </section>
 
@@ -246,8 +233,8 @@
 
     <!--Rodape-->
     <footer>
-        <p>&copy;Quiz de programadores.Todos os direitos reservados</p>
-        <p>Para conhecer mais sobre mim <a href="SobreMim.html" target="_blank">Clique aqui</a></p>
+        <p class="p1">&copy;Quiz de programadores.Todos os direitos reservados</p>
+        <p class="p2">Para conhecer mais sobre mim <a href="SobreMim.html" target="_blank">Clique aqui</a></p>
     </footer>
   </body>
 </html>
